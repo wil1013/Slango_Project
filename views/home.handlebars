@@ -1,0 +1,22 @@
+<div id='nav'>
+	<h1 id='banner'>SlanGo</h1>
+</div>
+
+	<div id='search-wrapper'>
+		<input class='search'id= 'lookup' type="text" placeholder='Lookup Term' autofocus>
+		<img id= 'search-glass' src="/images/search-glass.png" onclick="App.getTweets(), App.urbanCollection(), App.getInstas()">
+	  	{{!-- <img id = 'twitter-logo'src="/images/twitter.png" > App.instagramCollection()--}}
+	</div>
+  	<div id = 'query-term'></div>
+	<div id="movetxt">move from top to bottom</div>
+  	<div id="urban-data" ></div>
+
+
+  	
+  	<div id='instagram-data'></div>
+  	<a id='home' href='/'>New Search</a>
+  	<div id='twitter-view'></div>
+
+<template id="urban-temp">
+    <h1>{{Title}}</h1>
+  </template>

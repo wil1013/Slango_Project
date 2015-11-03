@@ -1,0 +1,231 @@
+
+
+#banner{
+    
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 500%;
+    width: 100%;
+    height: 13%;
+    position: fixed;
+    margin-top: 0px;
+    top: 0px;
+    display: block;
+    background-color: black;
+    left: 0px;
+    z-index: 999;
+}
+
+body{
+	background-color: skyblue;
+}
+#home{
+	position: fixed;
+    top: 5%;
+    color: wheat;
+    right: 6%;
+    z-index: 999;
+    font-size: large;
+
+}
+
+#lookup{
+	display: block;
+    height: 17%;
+    width: 60%;
+    font-size: 474%;
+    text-align: center;
+    position: fixed;
+    border-radius: 40px;
+    border: 2px solid grey;
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+ #search-wrapper{
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+ }
+
+#search-glass{
+	height: 18%;
+    width: 8%;
+    display: block;
+    left: 71%;
+    top: 40%;
+    position: fixed;
+    z-index: 998;
+}
+
+#search-glass:hover {
+    background-color: blue;
+}
+
+#instagram-data{
+	display: block;
+    top: 200%;
+    position: absolute;
+    height: 1000%;
+    margin-left: 1%;
+    width: 72%;
+}
+
+.insta{
+	display: inline-block;
+	height: 7%;
+	width: 31%;
+	border: 2px;
+    background-color: white;
+	
+	border-left-width: 10px;
+	border-color: purple;
+	border-width: 10px;
+	margin-bottom: 10px;
+	color: white;
+	float: left;
+	margin: 7px;
+	position: relative;
+
+}
+div.insta a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: white; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    /*filter: alpha(opacity=1); 
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+*/
+}
+.instagram-user{
+	position: relative;
+    height: 12%;
+    width: 20%;
+    padding: 7px;
+    border-radius: 50px;
+}
+
+#insta-name{
+    left: 30%;
+    top: -13%;
+    height: 5%;
+    width: 40%;
+    position: inherit;
+    color: darkslateblue;
+}
+
+.instagram-img{
+	height: 52%;
+    width: 95%;
+    top: -55px;
+    padding: 6px;
+    position: relative;
+
+}
+
+#instagram-text{
+	display: block;
+    position: inherit;
+    /* size: inherit; */
+    overflow: scroll;
+    top: -13%;
+    height: 30%;
+    width: 95%;
+    margin: auto;
+    font-size: smaller;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    color: darkslateblue;
+}
+#insta-likes{
+	position: inherit;
+    display: block;
+    height: 3%;
+    top: -11%;
+    width: 95%;
+    padding: 1%;
+    margin: auto;
+    font-size: smaller;
+    color: darkslateblue;
+}
+
+#twitter-view{
+	display: block;
+    right: 2%;
+    height: 100%;
+    width: 26%;
+    top: 20%;
+    position: absolute;
+}
+.tweet{
+	margin-bottom: 10px;
+	background-color: beige;
+}
+
+
+
+/*#twitter-logo{
+	position: absolute;
+	height: 25%;
+	width: 25%;
+}*/
+
+#query-term{
+
+    position: fixed;
+    top: 5%;
+    color: white;
+    left: 22%;
+    z-index: 999;
+    font-size: -webkit-xxx-large;
+
+}
+
+/*URBAN*/
+#urban-data{
+    
+    display: block;
+    position: absolute;
+    top: 20%;
+    height: 157%;
+    width: 70%;
+    font-size: 30px;
+    color: grey;
+}
+.urbDiv{
+    background-color: orange;
+    margin-bottom: 10px;
+    padding: 2%;
+    height: 33%;
+    width: 96%;
+    overflow: hidden;
+
+}
+
+div.urbDiv a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: white; /* Fix to make div clickable in IE */
+    opacity: 0; 
+}
