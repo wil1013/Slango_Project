@@ -11,6 +11,7 @@ var Twitter = require('twitter');
 app.use(express.static('public'));
 // app.listen(3000);
 app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
