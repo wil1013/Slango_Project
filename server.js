@@ -5,12 +5,12 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     exphbs = require('express-handlebars')
     app = express();
-// var misc = require('./public/javascripts/twitterConnect.js');
 
 app.use(bodyParser.urlencoded({extended: false}));
 var Twitter = require('twitter');
 app.use(express.static('public'));
-app.listen(3000);
+// app.listen(3000);
+app.set('port', process.env.PORT || 3000);
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -48,14 +48,12 @@ var client = new Twitter({
   access_token_secret: 'rt9gqJFVHhLvuIKJYYK1l4bPGS7ptrrlvWWdALZ20Mkcp'
 });
 
-// var jqueryInput = $('#lookup').val();
-// console.log(jqueryInput+'jqueryInput here');
 
 
 app.get('/twitter', function (req, res) {
     var query = '%23'+queryString;
 
-    // console.log('server query again '+ query +' is the the query')
+    
     var globalTweets = '';
     var params = {
     q: query,
@@ -68,7 +66,6 @@ app.get('/twitter', function (req, res) {
         var globalTweets = tweets;
         res.send(tweets.statuses);
 
-        // console.log('server js query object'+query);
 
         
   });
